@@ -1,0 +1,87 @@
+body {
+    margin: 0 auto;
+    padding: 0;
+    font-family: inconsolataregular;
+    background-image: url("imgs/bg.png");
+    background-attachment: fixed;
+    background-position: center;
+}
+
+h5 {
+    background-color:black;
+    color: white;
+    margin: 0;
+    padding: 0.5em 0em 0.5em 0.5em;
+    font-family: 'pixelpathhpregular';
+    font-size: 2em;
+    border-bottom: red solid 0.2em;
+}
+
+
+
+
+p {
+
+    margin: 0;
+    padding: 1em 1em 1.5em 1em;
+}
+
+.plusdeP {
+    margin-top: -2em;
+}
+
+.day {
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+
+#main {
+    width: 100%;
+    max-width: 700px;
+    margin: 2em auto;
+}
+.cols {
+    -moz-column-count:3;
+    -moz-column-gap: 3%;
+    -moz-column-width: 30%;
+    -webkit-column-count:3;
+    -webkit-column-gap: 3%;
+    -webkit-column-width: 30%;
+    column-count: 3;
+    column-gap: 3%;
+    column-width: 30%;
+}
+
+
+
+/* FONTS */
+@font-face {
+    font-family: 'pixelpathhpregular';
+    src: url('fonts/pixelpathhp-regular-webfont.ttf');
+    src: url('fonts/pixelpathhp-regular-webfont.woff') format('woff');
+
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'inconsolatabold';
+    src: url('fonts/inconsolata-bold-webfont.ttf');
+    src: url('fonts/inconsolata-bold-webfont.woff') format('woff');
+
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'inconsolataregular';
+    src: url('fonts/inconsolata-regular-webfont.ttf');
+    src: url('fonts/inconsolata-regular-webfont.woff') format('woff');
+
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+

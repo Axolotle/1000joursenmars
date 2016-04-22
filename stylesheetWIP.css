@@ -2,9 +2,70 @@ body {
     margin: 0 auto;
     padding: 0;
     font-family: inconsolataregular;
-    background-image: url("imgs/newTOOBIG.jpg");
+    background-image: url("imgs/bitmapcolor.png");
     background-attachment: fixed;
     background-position: center;
+}
+
+
+
+/* TEXTE INTRO */
+
+.box {
+    margin: 0 auto;
+    max-width: 40em;
+}
+
+header {
+    color: white;
+    background-color: black;
+    margin-bottom: 0;
+}
+
+#title {
+    text-align: center;
+    font-size: 4em;
+    padding-top: 0.5em;
+    margin-top: 0.75em;
+    margin-bottom: 0.1em;
+    font-family: pixelpathhpregular;
+
+}
+
+#subtitle {
+    text-align: center;
+    margin-top: 0.5em;
+    margin-bottom: 0;
+    padding-bottom: 1em;
+}
+
+
+#section {
+    line-height: 1.2em;
+}
+#pad {
+    background-color: white;
+    padding: 2em 3em 2em 3em;
+    border-bottom: blue solid 0.8em;
+}
+
+.top {
+    padding-top: 0.5em;
+}
+
+a {
+    font-family: inconsolatabold;
+    color: black;
+}
+
+
+
+/* CALENDRIER */
+
+#main {
+    width: 100%;
+    max-width: 90%;
+    margin: 10em auto;
 }
 
 h5 {
@@ -14,25 +75,18 @@ h5 {
     padding: 0.5em 0em 0.5em 0.5em;
     font-family: 'pixelpathhpregular';
     font-size: 2em;
-    border-bottom: blue solid 0.2em;
+    padding-left: 0.8em;
+
 }
 
-
-
-
-p {
-
-    margin: 0;
-    padding: 1em 1em 1.5em 1em;
-}
-
-.plusdeP {
-    margin-top: -2em;
+div.texte {
+    margin:2.5em 2em 3em 1.5em;
 }
 
 .day {
     background-color: white;
-    margin-bottom: 20px;
+    margin-bottom: 3em;
+    border-bottom: blue solid 0.8em;
 
     overflow: hidden; /* Fix for firefox and IE 10-11  */
     -webkit-column-break-inside: avoid; /* Chrome, Safari, Opera */
@@ -44,24 +98,87 @@ p {
 }
 
 
-#main {
-    width: 100%;
-    max-width: 90%;
-    margin: 2em auto;
+
+#show {
+    background-color: red;
 }
+
+
+
+footer {
+    padding: 2em;
+    background-color: white;
+    color: black;
+
+
+    max-width: 40em;
+}
+
+footer p {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+@media only screen and (min-width: 1601px) {
+.cols {
+    -moz-column-count:4;
+    -moz-column-gap: 2%;
+    -moz-column-width: 23%;
+    -webkit-column-count:4;
+    -webkit-column-gap: 2%;
+    -webkit-column-width: 23%;
+    column-count: 4;
+    column-gap: 2%;
+    column-width: 23%;
+
+}
+}
+
+@media only screen and (max-width: 1600px) {
 .cols {
     -moz-column-count:3;
-    -moz-column-gap: 3%;
-    -moz-column-width: 30%;
+    -moz-column-gap: 4%;
+    -moz-column-width: 29%;
     -webkit-column-count:3;
-    -webkit-column-gap: 3%;
-    -webkit-column-width: 30%;
+    -webkit-column-gap: 4%;
+    -webkit-column-width: 29%;
     column-count: 3;
-    column-gap: 3%;
-    column-width: 30%;
+    column-gap: 4%;
+    column-width: 29%;
 
 }
+}
 
+@media only screen and (max-width: 1150px) {
+.cols {
+    -moz-column-count:2;
+    -moz-column-gap: 4%;
+    -moz-column-width: 46%;
+    -webkit-column-count:2;
+    -webkit-column-gap: 4%;
+    -webkit-column-width: 29%;
+    column-count: 3;
+    column-gap: 4%;
+    column-width: 29%;
+
+}
+}
+
+@media only screen and (max-width: 650px) {
+.cols {
+    -moz-column-count:1;
+    -moz-column-gap: 0%;
+    -moz-column-width: 100%;
+    -webkit-column-count:1;
+    -webkit-column-gap: 0%;
+    -webkit-column-width: 100%;
+    column-count: 1;
+    column-gap: 0%;
+    column-width: 100%;
+
+}}
 
 /* FONTS */
 @font-face {
@@ -90,63 +207,3 @@ p {
     font-weight: normal;
     font-style: normal;
 }
-
-
-.box {
-    margin: 0 auto;
-    max-width: 40em;
-}
-
-#title {
-    text-align: center;
-    font-size: 4em;
-    padding-top: 0.5em;
-    margin-top: 0.75em;
-    margin-bottom: 0.1em;
-    font-family: pixelpathhpregular;
-
-}
-
-#subtitle {
-    text-align: center;
-    margin-top: 0.5em;
-    padding-bottom: 1em;
-
-}
-
-header {
-    color: white;
-    background-color: black; 
-
-}
-
-#section {
-    line-height: 1.2em;
-
-
-}
-
-#pad {
-    background-color: white;
-    padding: 2em;
-    margin-top: -0.75em;
-}
-
-footer {
-    bottom: 0;
-    margin: 2em auto 0 auto;
-    max-width: 40em;
-}
-
-
-
-
-.top {
-    padding-top: 0.5em;
-}
-
-a {
-    font-family: inconsolatabold;
-    color: black;
-}
-

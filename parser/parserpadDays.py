@@ -15,7 +15,7 @@ def isLineInt(s):
 def marsToDate(d):
     daysToAdd = eval(day) - 31
     newDate = date(2016, 3, 31) + timedelta(days=daysToAdd)
-    dateToPrint = newDate.strftime("%A %d %B %Y")
+    dateToPrint = newDate.strftime("%d %B %Y")
     return dateToPrint
 
 
@@ -29,9 +29,11 @@ d\'écriture à mille mains, une fabrique bricolée de mille futurs possibles."\
         <link rel="stylesheet" href="stylesheetWIP.css" />\n\
     </head>\n\n    <body>\n')
 
+
 with open('main.html', 'r') as main:
     for line in main:
         print(line.strip('\n'))
+
 
 print('<div id="main" class="cols">')
 
@@ -43,15 +45,16 @@ with open('padimport.txt', 'r') as pad1000:
             if isLineInt(day):
                 dateToPrint = marsToDate(day)
 
+                print('    </div>')
                 print('</div>')
-                print('<div id="mars' + day + '" class="day">')
-                print('    <h5> <span class="show">' + day + 'mars</span> <span\
-                        class="hide">' + dateToPrint + '</span></h5>')
+                print('<div class="day">')
+                print('    <h5><span id="show">' + day + ' mars</span> <span\
+ id="hide">' + dateToPrint + '</span></h5>')
                 text = line.split(' ', 3)[3]
+                print('    <div class="texte">')
                 print('    <p>' + text.strip('\n') + '</p>')
             else:
                 print('    <p class="plusdeP">' + line.strip('\n') + '</p>')
-
 
 
 print('</div>\n</div>')
@@ -64,4 +67,5 @@ sans demander : il n\'y a rien à voler. <a href="http://1000joursenmars.space">
 1000joursenmars.space</a></p>\n\
         </footer>')
 
+print('        <script src="test.js"></script>')
 print('    </body>\n</html>')

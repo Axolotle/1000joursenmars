@@ -7,29 +7,26 @@ body {
     background-position: center;
 }
 
-
-
 /* TEXTE INTRO */
 
 .box {
     margin: 0 auto;
-    max-width: 40em;
+    max-width: 42em;
 }
 
 header {
     color: white;
     background-color: black;
-    margin-bottom: 0;
 }
 
 #title {
     text-align: center;
-    font-size: 4em;
+    font-size: 3em;
     padding-top: 0.5em;
-    margin-top: 0.75em;
-    margin-bottom: 0.1em;
+    padding-bottom: 0.5em;
     font-family: pixelpathhpregular;
-
+    margin-top: 2em;
+    margin-bottom: 0;
 }
 
 #subtitle {
@@ -45,7 +42,7 @@ header {
 }
 #pad {
     background-color: white;
-    padding: 2em 3em 2em 3em;
+    padding: 2em 3em 3em 3em;
     border-bottom: blue solid 0.8em;
 }
 
@@ -66,6 +63,8 @@ a {
     width: 100%;
     max-width: 90%;
     margin: 10em auto;
+
+    line-height: 1.2em;
 }
 
 h5 {
@@ -97,26 +96,17 @@ div.texte {
     break-inside: avoid-column;
 }
 
-
-
-#show {
-    background-color: red;
+.hide {
+    display: none;
 }
 
 
 
 footer {
-    padding: 2em;
+    padding: 2em 3em;
     background-color: white;
     color: black;
-
-
-    max-width: 40em;
-}
-
-footer p {
-    margin: 0;
-    padding: 0;
+    text-align: center;
 }
 
 

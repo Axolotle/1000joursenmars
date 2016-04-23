@@ -1,58 +1,50 @@
 body {
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
-    
     font-family: inconsolataregular;
+    background-image: url("imgs/bitmapcolor.png");
+    background-attachment: fixed;
+    background-position: center;
 }
+
+/* TEXTE INTRO */
 
 .box {
     margin: 0 auto;
-    max-width: 40em;
-    border: black solid 0.5em;
-}
-
-#title {
-    text-align: center;
-    font-size: 4em;
-    margin-top: 0.75em;
-    margin-bottom: 0.1em;
-    font-family: pixelpathhpregular;
-
-}
-
-#subtitle {
-    text-align: center;
-    margin-top: 0.5em;
-
+    max-width: 42em;
 }
 
 header {
     color: white;
     background-color: black;
-    
-    
-    border-top-left-radius: 1em;
-    border-top-right-radius: 1em;
-    
 }
+
+#title {
+    text-align: center;
+    font-size: 3em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    font-family: pixelpathhpregular;
+    margin-top: 2em;
+    margin-bottom: 0;
+}
+
+#subtitle {
+    text-align: center;
+    margin-top: 0.5em;
+    margin-bottom: 0;
+    padding-bottom: 1em;
+}
+
 
 #section {
     line-height: 1.2em;
-
 }
-
 #pad {
-    padding: 2em;
+    background-color: white;
+    padding: 2em 3em 3em 3em;
+    border-bottom: blue solid 0.8em;
 }
-
-footer {
-    bottom: 0;
-    margin: 2em auto 0 auto;
-    max-width: 40em;
-}
-
-
-
 
 .top {
     padding-top: 0.5em;
@@ -63,57 +55,127 @@ a {
     color: black;
 }
 
-/* CALENDRIER ELEMENTS */
-.yup {
-    width: 0.5em;
-    height: 3em;
-    position: relative;
-    background-color: black;
-    border-top-left-radius: 0.25em;
-    border-top-right-radius: 0.25em;
-    margin: 0 auto;
-}
-#un {
-    right: 13em;
-    top: 3em;
-}
-#trois {
-    left: 13em;
-    top: -3em;
+
+
+/* CALENDRIER */
+
+#main {
+    width: 100%;
+    max-width: 90%;
+    margin: 10em auto;
+
+    line-height: 1.2em;
 }
 
-#elemwhite {
-    z-index: 9999;
-    margin-top: -4.5em;
-    margin-bottom: -3em;
+h5 {
+    background-color:black;
+    color: white;
+    margin: 0;
+    padding: 0.5em 0em 0.5em 0.5em;
+    font-family: 'pixelpathhpregular';
+    font-size: 2em;
+    padding-left: 0.8em;
+
 }
-.yup2 {
-    width: 0.5em;
-    height: 1.5em;
-    position: relative;
+
+div.texte {
+    margin:2.5em 2em 3em 1.5em;
+}
+
+.day {
     background-color: white;
-    border-bottom-left-radius: 0.25em;
-    border-bottom-right-radius: 0.25em;
+    margin-bottom: 3em;
+    border-bottom: blue solid 0.8em;
 
-    margin: 0 auto;
-}
-#un2 {
-    right: 13em;
-    top: 1.5em;
-}
-#trois2 {
-    left: 13em;
-    top: -1.5em;
+    overflow: hidden; /* Fix for firefox and IE 10-11  */
+    -webkit-column-break-inside: avoid; /* Chrome, Safari, Opera */
+    page-break-inside: avoid; /* Deprecated Firefox */
+    -moz-column-break-inside:avoid; /* Current Firefox */
+    column-break-inside:avoid;
+    break-inside: avoid; /* IE 10+ */
+    break-inside: avoid-column;
 }
 
+.hide {
+    display: none;
+}
 
+
+
+footer {
+    padding: 2em 3em;
+    background-color: white;
+    color: black;
+    text-align: center;
+}
+
+
+
+@media only screen and (min-width: 1601px) {
+.cols {
+    -moz-column-count:4;
+    -moz-column-gap: 2%;
+    -moz-column-width: 23%;
+    -webkit-column-count:4;
+    -webkit-column-gap: 2%;
+    -webkit-column-width: 23%;
+    column-count: 4;
+    column-gap: 2%;
+    column-width: 23%;
+
+}
+}
+
+@media only screen and (max-width: 1600px) {
+.cols {
+    -moz-column-count:3;
+    -moz-column-gap: 4%;
+    -moz-column-width: 29%;
+    -webkit-column-count:3;
+    -webkit-column-gap: 4%;
+    -webkit-column-width: 29%;
+    column-count: 3;
+    column-gap: 4%;
+    column-width: 29%;
+
+}
+}
+
+@media only screen and (max-width: 1150px) {
+.cols {
+    -moz-column-count:2;
+    -moz-column-gap: 4%;
+    -moz-column-width: 46%;
+    -webkit-column-count:2;
+    -webkit-column-gap: 4%;
+    -webkit-column-width: 29%;
+    column-count: 3;
+    column-gap: 4%;
+    column-width: 29%;
+
+}
+}
+
+@media only screen and (max-width: 650px) {
+.cols {
+    -moz-column-count:1;
+    -moz-column-gap: 0%;
+    -moz-column-width: 100%;
+    -webkit-column-count:1;
+    -webkit-column-gap: 0%;
+    -webkit-column-width: 100%;
+    column-count: 1;
+    column-gap: 0%;
+    column-width: 100%;
+
+}}
 
 /* FONTS */
 @font-face {
     font-family: 'pixelpathhpregular';
     src: url('fonts/pixelpathhp-regular-webfont.ttf');
     src: url('fonts/pixelpathhp-regular-webfont.woff') format('woff');
-    
+
     font-weight: normal;
     font-style: normal;
 }

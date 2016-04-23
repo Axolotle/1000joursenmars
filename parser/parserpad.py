@@ -18,6 +18,21 @@ def marsToDate(d):
     dateToPrint = newDate.strftime("%d %B %Y")
     return dateToPrint
 
+def orthoTypo(text, rules):
+    for i, j in rules.items(): 
+        text = text.replace(i, j)
+    return text
+
+
+rules = { " ;": "&nbsp;;", 
+          " :": "&nbsp;:",
+          " ?": "&nbsp;?",
+          " !": "&nbsp;!",
+          "« ": "«&nbsp;",
+          " »": "&nbsp;»",
+          " -": "&nbsp;-",
+          "'" : "´" }
+
 
 
 with open('main.html', 'r') as main:
@@ -28,23 +43,31 @@ with open('main.html', 'r') as main:
 print('\n<div id="main" class="cols">')
 
 with open('padimport.txt', 'r') as pad1000:
+    first = True
+    for _ in range(24):
+        next(pad1000)
     for line in pad1000:
         day = line.split(' ', 1)[0]
 
         if len(line.split()) > 4:
             if isLineInt(day):
                 dateToPrint = marsToDate(day)
+                if (first):
+                    first = False
+                else:
+                    print('        </div>')
+                    print('    </div>')
 
-                print('    </div>')
-                print('</div>')
-                print('<div class="day" id="' + day + '">')
-                print('    <h5><span class="show">' + day + ' mars</span> <span\
- class="hide">' + dateToPrint + '</span></h5>')
+                print('    <div class="day" id="' + day + '">')
+                print('        <h5><span class="show">' + day + ' mars</span> \
+<span class="hide">' + dateToPrint + '</span></h5>')
                 text = line.split(' ', 3)[3]
-                print('    <div class="texte">')
-                print('    <p>' + text.strip('\n') + '</p>')
+                text = orthoTypo(text, rules)
+                print('        <div class="texte">')
+                print('            <p>' + text.strip('\n') + '</p>')
             else:
-                print('    <p class="plusdeP">' + line.strip('\n') + '</p>')
+                text = orthoTypo(line, rules)
+                print('            <p class="plusdeP">' + text.strip('\n') + '</p>')
 
 
 print('</div>\n</div>\n</div>\n')

@@ -10,6 +10,13 @@
 
 <body>
 
+<a href="#main" class="toplink">
+    <svg height="30" width="30">
+        <rect width="30" height="30" style="fill:white;stroke:blue;stroke-width:4" />
+        <polyline points="7,21 15,9 23,21" style="fill:none;stroke:blue;stroke-width:2" />
+    </svg>
+</a>
+
 <header class="box">
     <h1 id="title">1000 jours en mars</h1>
 </header>
@@ -24,12 +31,21 @@
             <li>Choisissez une date, entre demain et le 1000 mars 2016 ;</li>
             <li>Écrivez ce qui s'y passe, comment on y vit, ce qui a changé ou est resté le même ;</li>
             <li>Signez de votre nom réel, imaginaire ou inexistant ;</li>
-            <li>Postez le texte sur le pad <a href="https://strasbourg.nuitdebout.fr/pad/p/1000joursenmars" target="_blank">1000joursenmars</a>, envoyez-le par mail à <a href="mailto:1000joursenmars@zanzibar.zone">1000joursenmars@zanzibar.zone</a> ou partagez-le sur la page <a href="https://www.facebook.com/groups/577395245769634/" target="_blank">facebook</a> ;</li>
+            <li>Postez le texte sur le pad <a href="https://strasbourg.nuitdebout.fr/pad/p/1000joursenmars" target="_blank">1000joursenmars</a>, envoyez-le par <a href="mailto:1000joursenmars@zanzibar.zone">mail</a> ou partagez-le sur la page <a href="https://www.facebook.com/groups/577395245769634/" target="_blank">facebook</a> ;</li>
             <li>Vous pouvez lire sur ce site les textes proposés sur le pad. Celui-ci s'actualise une fois par jour.</li>
         </ul>
 
         <p class="top">1000 jours en mars invite à imaginer collectivement les un-peu-moins de trois années qui arrivent. C'est de la science-fiction en prise directe avec le réel. Un endroit où formuler des espoirs, des attentes, des craintes. Où se raconter, puis raconter aux autres, les histoires de ce qui va se passer.</p>
         <p>Si vous êtes aux Nuits Debout qui existent ou prévoyez d'en monter de nouvelles, on va essayer de créer un kit pour des ateliers 1000 jours en mars sur les places occupées, avec papier de bois, crayons et petits cris d'encouragement.</p>
+    </div>
+
+    <div id="menu">
+        <a id="padlink" href="https://strasbourg.nuitdebout.fr/pad/p/1000joursenmars" target="_blank">> Écrire sur le pad</a>
+        <form>
+            <input id="anchorInput" type="text" placeholder="N°"/>
+            <input type="submit" value="> Aller au texte"
+           onclick="goToAnchor(document.getElementById('anchorInput').value)" />
+        </form>
     </div>
 </section>
 
@@ -236,7 +252,7 @@
             <p class="plusdeP">À Nuit Debout, nous voulons d´un autre monde et des gouvernements qui cessent leur grand jeu pervers et cynique. Nous ne voulons plus que la France s´abaisse à décerner la Légion d´honneur à des chefs d´Etat qui soutiennent la lapidation, et la décapitation pour adultère ou fornication ou blasphème à une religion. La religion n´est pas faite pour soumettre les peuples à la loi de princes et de rois. La religion, s´il en existe vraiment une de sincère et divine, est faite pour libérer le peuple, le rendre plus conscient de soi, de ses capacités spirituelles et morales, de son éthique solidaire, de sa force de faire grandir une société dans la beauté et l´espérance. La Légion d´honneur devrait être réservées à ces personnes qui se battent pour ce style de monde et non à des gens qui usent de leurs milliards pour fomenter des complots, détruire des villes entières par le terrorisme. La légion d´honneur devrait appartenir à une France libérée qui ne se compromet plus avec des dictatures aux noms d´intérêts économiques supérieurs qui sont toujours les intérêts de quelques-uns au détriment de tous les autres.</p>
             <p class="plusdeP">À Nuit Debout, nous sommes tous des précaires de ce monde, des voyageurs qui cherchons notre route, des banlieusards et banlieusardes qui voulons la vraie égalité et non cette élite qui décide pour tout et pour tous en s´octroyant l´immense part du gâteau du Capital fourni par tous et toutes. À Nuit Debout, nous sommes des boat people en partance pour le nouveau monde et ensemble nous arriverons à éviter le naufrage que nos élites nous promettent par leurs comportements scandaleux et décadents. La vraie décadence ce sont eux. Pas nous. Parce que nous sommes Debout&nbsp;! Et qu´eux ils se sont agenouillés devant l´argent, la Bourse, le Capital, et que rien au monde ne compte plus pour eux que leurs comptes en banque si possibles défiscalisés et placés dans des paradis qui leur appartiennent et dont nous n´avons jamais accès. Nous sommes Debout&nbsp;! Parce que pour nous, l´être humain passe avant le Capital et que pour nous le Capital sert prioritairement à une redistribution juste et équitable parmi les peuples&nbsp;; non contre rien du tout en échange citoyen, contre aucun effort de notre part mais au contraire pour récompenser réellement le fruit de nos efforts fournis pour devenir créatifs et autonomes tout en se solidarisant des soucis de notre entourage, des communautés qui vivent différemment de nous mais qui ne sont pas autrement humaines que nous. </p>
             <p class="plusdeP">Nuit Debout est un formidable moteur solaire de changement de société. C´est pourquoi j´y prends part avec passion et que je donne ma part au processus de ce Mouvement mondial pour une humanité sans frontière et sans limite.</p>
-            <p class="plusdeP">Écrit pour le 1er Mai 2016 ou plus précisément pour le 62 mars de notre calendrier deboutiste dans ma cabine sous-marine. La plage est belle. Les filles sont belles. Les garçons et les filles sont rebelles. Paris est notre port. La Place de la République notre sous-marin avec tous ses matelots filles et garçons qui forment notre armée rouge. Nos périscopes sont nombreux pour relayer ce qui se passe à bord. Tout va bien pour nous. Notre armée est vaillante et ses armes sont l´esprit, le coeur, et nos regards sur le monde avec nos crayons de couleur qui virevoltent dans tous les sens. Le 1er mai, 62 mars de notre guerre, il y aura de jolis papillons dans les rues et des CRS pour les capturer dans leurs filets... Ils ne voleront pas nos rêves...</p>
+            <p class="plusdeP">Écrit pour le 1er Mai 2016 ou plus précisément pour le 62 mars de notre calendrier deboutiste dans ma cabine sous-marine. La plage est belle. Les filles sont belles. Les garçons et les filles sont rebelles. Paris est notre port. La Place de la République notre sous-marin avec tous ses matelots filles et garçons qui forment notre armée rouge. Nos périscopes sont nombreux pour relayer ce qui se passe à bord. Tout va bien pour nous. Notre armée est vaillante et ses armes sont l´esprit, le coeur, et nos regards sur le monde avec nos crayons de couleur qui virevoltent dans tous les sens. Le 1er mai, 62 mars de notre guerre, il y aura de jolis papillons dans les rues et des CRS pour les capturer dans leurs filets... Ils ne voleront pas nos rêves... </p>
         </div>
     </div>
     <div class="day" id="63">
@@ -278,7 +294,7 @@
     <div class="day" id="68">
         <h5><span class="show">68 mars</span> <span class="hide">07 mai 2016</span></h5>
         <div class="texte">
-            <p>Miracle...?&nbsp;: l´ensemble des élu-e-s&nbsp;: conseillers municipaux, généraux, régionaux, députés, sénateurs, du  village à l´Europe sont tombés en léthargie ce matin&nbsp;: funestes sonneries pour ces grands pitres de tous les partis. Le Grand Sommeil de la Classe Politique, enfin&nbsp;!! Quelques rares épargnés errent hébétés par la situation et la prise de conscience de leur vacuité&nbsp;: que faire&nbsp;!!!! Les majestueuses salles de leurs dérisoires assemblées sont rapidement occupées par les saltimbanques, comédiens, habitants et collectifs bariolés pour faire entendre des voix nouvelles et rescusiter l´agora perdue depuis trop longtemps et dévoyée par les Démocrates Associés du "politic business". La démocratie directe est en marche&nbsp;; au travail camarades, résidents et citoyens. Une joyeuse pagaille en perspective mais sans les escrocs de la politique dans les pattes.</p>
+            <p>Miracle...?&nbsp;: l´ensemble des élu-e-s&nbsp;: conseillers municipaux, généraux, régionaux, députés, sénateurs, du  village à l´Europe sont tombés en léthargie ce matin&nbsp;: funestes sonneries pour ces grands pitres de tous les partis. Le Grand Sommeil de la Classe Politique, enfin&nbsp;!! Quelques rares épargnés errent hébétés par la situation et la prise de conscience de leur vacuité&nbsp;: que faire&nbsp;!!!! Les majestueuses salles de leurs dérisoires assemblées sont rapidement occupées par les saltimbanques, comédiens, habitants et collectifs bariolés pour faire entendre des voix nouvelles et rescusiter l´agora perdue depuis trop longtemps et dévoyée par les Démocrates Associés du "politic business". La démocratie directe est en marche&nbsp;; au travail camarades, résidents et citoyens. Une joyeuse pagaille en perspective mais sans les escrocs de la politique dans les pattes. </p>
         </div>
     </div>
     <div class="day" id="69">
@@ -381,10 +397,32 @@
             <p>Ptin mais faut que j´arrête de lire les commentaires sur le net quoi... Qu´est-ce que c´est mon problème&nbsp;? Évidemment que ces gens ont de l´ego plein la bouche, que tout le monde a un avis sur tout, y compris sur nous. Mais y a plus que ça. Ils hurlent contre la vie elle-même, contre ce qui les empêchent de se sentir libres d´être des consommateurs bien dans leurs mocassins à pompons. Et moi, pourquoi je me délectais de leur haine&nbsp;? Ca me faisait rire, il y a quelques temps, de voir la misère des gens qui savent tout. Je ris plus du tout. Ça me terrifie. </p>
         </div>
     </div>
+    <div class="day" id="84">
+        <h5><span class="show">84 mars</span> <span class="hide">23 mai 2016</span></h5>
+        <div class="texte">
+            <p>Une Nuit debout, deux Nuits debout, trois Nuits debout, quatre Nuits debout, cinq Nuits debout, six Nuits... quoi&nbsp;? Je compte les Nuits debout pour m´endormir tu vois pas&nbsp;? J´y peux rien j´aime pas les moutons.</p>
+            <p class="plusdeP">Une Nuit debout, deux Nuits debout, trois Nuits debout, quatre Nuits debout, cinq Nuits debout, six Nuit deb... quoi&nbsp;? Ah, je t´empêche de dormir de dormir... Désolé mec...</p>
+            <p class="plusdeP">Une Nuit debout, deux Nuits debout, trois Nuits debout, quatre Nuits debout, cinq Nuits debout, six Nuits debout, sept Nuits debout, huit Nuits debout, neuf Nuits debout, dix Nuits debout, onze Nuits debout, douze Nuits debouts, treize Nuits debout, quatorze... Nuits... debout, quinze..... Nuits..... debout...., quin...ze....... Nuits............de......bout........, seeeeeize..................Nuits....................debouut.............................................................................................................................................................</p>
+        </div>
+    </div>
+    <div class="day" id="85">
+        <h5><span class="show">85 mars</span> <span class="hide">24 mai 2016</span></h5>
+        <div class="texte">
+            <p>Les Mexicains Debout ont bidulé une piñata CRS. Les gamins se ruent pour la tabasser. Elle cède. Des larmes tombent, pas des bonbons. Des trucs en plastoche fin qui éclatent quand on les touche. C´est quoi, la morale&nbsp;? La violence n´est pas une solution quand on veut des bonbons&nbsp;? Il ne faut pas taper un CRS, c´est mouillé&nbsp;? Ils sont finauds, ces Mexicains. Debout les Chiapas&nbsp;!</p>
+        </div>
+    </div>
     <div class="day" id="86">
         <h5><span class="show">86 mars</span> <span class="hide">25 mai 2016</span></h5>
         <div class="texte">
             <p>Combien de temps on va encore tenir&nbsp;? Moi, tu vois, j´ai pas bougé depuis le début. 86 jours, ouais. 86 jours que je suis debout, sans m´assoir, sans dormir, je sais même pas combien d´heures a fait, 86 fois 24. Un paquet. Bon, c´est pas tout à fait vrai, la nuit&nbsp;;  je dors debout, y a des potes qui se relayent pour me tenir, pour pas que je tombe (j´ai le sommeil agité). c´est absurde&nbsp;: je pourrais rentrer chez moi et mesurer le mouvement, doucement, mais non, je veux rester là. C´est comme si, d´une certaine façon, cette place ne pouvait plus tenir sans moi. Vous allez dire&nbsp;: voilà le prétentieux. Mais je vous le dit&nbsp;: je me suis encroûté ici, j´ai pris racine, je tiens l´espace, j´en suis devenu le pivot. Combien de fois, ils ont menacé de nous la reprendre, cette place, hein&nbsp;? Juste appuyer dessus pourqu´elle tombe. Mais rien à faire&nbsp;: elle veut pas bouger. Elle reste ancrée. Et vous savez pourquoi&nbsp;? Parce que je la tiens. Et parce que personne me voit. Je suis dans l´angle mort de la statue, le nez vers elle, douce déesse, et je me cache dans dans les nuées, dans les pigeons, les étudiants. On m´a badigeonné, taggé. Les chiens me pissent dessus. J´ai de la morve partout, de la chiure d´oisillon. J´ai mes deux mains sur une pancarte sans message, tellement vide que tout s´y lit,  y compris la détresse. L´espoir. Le renoncement. La tenacité. Tout et son contraire. On est tellement prévisible, dans notre binarité, quand on regarde l´abysse, l´abysse vous regarde même plus. Il regarde le futur.</p>
+        </div>
+    </div>
+    <div class="day" id="87">
+        <h5><span class="show">87 mars</span> <span class="hide">26 mai 2016</span></h5>
+        <div class="texte">
+            <p>"- Bonjour, je m´appelle Florimont… Florimont avec un "t". Mais vous me connaissait déjà…" Le jeune homme au micro cache une légère timidité derrière sa mèche aristocratique. Pourtant, voilà plusieurs semaines qu´il parle devant une foule, deux fois par semaine. Il a rejoint les Nü-chouans avec Aliénor, Arnaud, Greg et Constance. D´autres  copains légitimistes les ont rejoints par la suite. Le mouvement a planté ses barnums dans une aile du parc de Bagatelle. Qu´importe pour les autorisations nécessaires, le maire est acquis à la cause.  Lui aussi ne peut pas sentir cette chienlit gauchiste qui se répand comme des poux. </p>
+            <p class="plusdeP">Le mouvement essaime. Un peu partout, les nobles sortent du bois. Dans le Bordelais, le Baron de Rocquigny a même mis a disposition son château. Les crânes rasés qui mouillent dans leurs draps aux imprimés fleur de lys aimeraient les rejoindre. Mais la greffe ne prend pas. Le sang bleu ne pourrait se diluer dans la roture. </p>
+            <p class="plusdeP">Florimont termine son petit discours avec la devise des Brossart de Cléry&nbsp;:  Audenti succédait opus. L´AUDACE DONNE LE SUCCÈS&nbsp;!!! Les hourras, les applaudissements frénétiques et la mine extatique de l´auditoire tranchent avec l´ambiance fin de race des cocktails habituels. La révolte ne nous va finalement pas si mal, pensa Florimont, avant de passer le micro à Églantine.</p>
         </div>
     </div>
     <div class="day" id="88">
@@ -536,6 +574,25 @@
         <h5><span class="show">178 mars</span> <span class="hide">25 août 2016</span></h5>
         <div class="texte">
             <p> Il ne nous resterait alors plus, à nous les habitants de la deuxième res publica amissa (de la communauté abandonnée), qu’à attendre le retour des Césars – et de leur version de ­pacotille, les populistes, si tant est que le populisme nous apporte aujourd’hui la preuve que le césarisme fonctionne aussi avec des figurants. (Sloterdjnik)</p>
+        </div>
+    </div>
+    <div class="day" id="184">
+        <h5><span class="show">184 mars</span> <span class="hide">31 août 2016</span></h5>
+        <div class="texte">
+            <p>Aujourd´hui une main s´est levée avec l´idée de propager les débats dans toutes les rues en y installant des cahiers de doléance. Ouais, je sais, on est le 184 mars 2016... Mais la gamine au bout de la main a pas mal défendu son bout de gras&nbsp;: à force de passer devant le cahier de leur rue et d´y voir leurs voisins s´y pencher, les gens seraient intrigués et comprendraient qu´ils n´ont rien à perdre, et quasiment pas de temps, à y inscrire leur colère et leurs solutions. On laisserait ces cahiers là, on viendrait les lire souvent et on ramènerait les bonnes idées vers la Nuit. Malin. Ma grand-mère m´a fait comprendre un truc l´autre jour&nbsp;: ceux qui continuent à nous regarder de leurs fenêtres sans venir discuter ont des choses à dire, et sûrement des bonnes idées. Mais tous n´ont pas l´envie ou le temps de s´en servir pour construire comme nous. La gamine, elle a fini par lancer  "si on veut qu´ils nous rejoignent, commençons par les rejoindre". J´espère que son idée sera approuvée.</p>
+        </div>
+    </div>
+    <div class="day" id="184">
+        <h5><span class="show">184 mars</span> <span class="hide">31 août 2016</span></h5>
+        <div class="texte">
+            <p>Presque plus de batterie sur l´iPad, je suis dans un parc de la ville, faut que j´aille me brancher. C’est encore trop tôt pour avoir une vue d’ensemble claire sur ce qui est en train de se passer. J’ai plus de jus aujourd’hui. C’est encore un bel été mais je pense trop à la mort depuis que le militant B. s’est suicidé en garde à vue. Silhouettes sombres dans le parc, qui brisent cette fragile sensation de voler dans les ciels possibles de ce quelque chose de nouveau. Qui opère un retournement radical du système actuel, quelque chose de global, qui enserre à l’international et provoque une lutte de classes toute neuve. Depuis l’écran de l’iPad, j’essaie d’avoir quelques infos en me connectant grâce à mon smartphone. Soleil, dans le parc, des fleurs. Je me sens surveillé par les silhouettes, on est surveillés, on le sait bien, ce n’est pas nouveau. On reçoit des sms lors des rassemblements, on n’avait déjà vu ça ailleurs dans certaines luttes précédentes&nbsp;: «Nous vous informons que vous êtes en train de participer à un rassemblement dissident. Nous nous devons de vous rappeler que votre participation peut vous amener à être arrêté, interrogé, et que vous êtes sous le coup de sanctions graves et d’une enquête de moralité précise pour vous et vos proches.» Ce n’est jamais les mêmes messages et c’est parfois plus obscur, sarcastique voire autoritaire. Je sens mes pensées pousser sur mon crâne comme des petites fleurs noires, c´est une forme de pâte, une flore collée à ma cervelle. Et je relève les yeux sur l’espace du parc, et je me sens comme une braise. Je suis par terre, mon cul brûlant et transpirant à travers le short. Je me sentais amer en début de journée. Ça ne va pas mieux. Une sirène résonne pas très loin du parc. La connexion n’est pas terrible. J’ai rendez-vous dans une heure trente place de mars. On cherche des noms de code. Des codes, on a pensé à pas mal de possibles, genre&nbsp;: de l’argot mêlé à des transcriptions codées en nombres, une langue nou</p>
+            <p class="plusdeP">velle, des mots nouveaux. Et parfois les mots viennent en les mâchant, et parfois tout ce vocabulaire est dégoûtant. Dégoûtant car issue souvent de constructions sociales des dominants sur les dominé-e-s. Les commissions deviennent de plus en plus des groupuscules fermés, on a un peu de mal à communiquer et s’informer, les groupes de presses cloisonnent tout, les éditorialistes ont le pouvoir sur les stations de radios et à la télévision. Nous essayons de développer nos organes de presse, c’est la guérilla de l’info, et là aussi ce n’est pas nouveau. Mais ça donne le ton, c’est en train de nous aplatir. Nous n’avons pas assez de recul sur la situation pour nous apercevoir de ce qui est en train de se passer, pour voir sous nos yeux les transformations radicales qui s’opèrent. Je connais un hacker qui tente d’intercepter les communications et les systèmes du ministère de la sécurité intérieure. Nous n’avons pas assez d’informations. Les effectifs de police augmentent, l’armée est dans la rue. Le plan vigipirate a été rebaptisé&nbsp;: plan général de sûreté. Nous sommes de plus en plus contrôlé-e-s. L’état d’urgence ne devait plus être actif à l’heure actuelle. L’état des choses est en mutation. Il y a encore beaucoup de croyances, beaucoup de principes à faire sauter. Nos cellules d’actions ont une force dont on ne doit pas douter, elles naissent spontanément et tranquillement, elles sont en train de dessiner l’insurrection qui vient.</p>
+        </div>
+    </div>
+    <div class="day" id="185">
+        <h5><span class="show">185 mars</span> <span class="hide">01 septembre 2016</span></h5>
+        <div class="texte">
+            <p>J’ai reçu un texto tôt ce matin dans la nuit, 2h03&nbsp;: «&nbsp;Des briseurs de rêves étaient en réunion au bloc 39 ce soir. Si jamais ils reviennent, je sors le pied de biche.&nbsp;» Le sms venait de Franck, il fait référence aux groupes extrémistes qui profitent du calendrier pour monter en puissance, ils connaissent une croissance non négligeable, c’est un de nos soucis, ils fédèrent vite. Un gravier dans la bouche. J’ai répondu que je n’aime pas les briseurs de rêves mais que j’aime la pâte brisée. Et qu’il faut les éplucher, des pieds de leur propagande trouée aux têtes qui récupèrent notre mouvement avec ses contradictions, disséquer au coupe-papier leurs idées folles. Franck m’a répondu «&nbsp;Miam!&nbsp;». On venait de trouver notre pseudo d’activistes. MIAM.</p>
         </div>
     </div>
     <div class="day" id="192">
@@ -713,6 +770,12 @@
             <p class="plusdeP">Pour fêter ça on a monté des stands, des spectacles, des actions fortes. Des pancartes anniversaires défilent, certains parmi les premiers Debout reviennent pour l´occasion. Gamelles bio, vin de l´amitié, on grossit les rangs, fois deux. Un gars à côté de moi rigole en disant qu´on a volé le pain des syndicalistes.</p>
             <p class="plusdeP">Mais les têtes sont fatiguées, lessivées, les slogans à peine visibles. Les acharnés continuent d´occuper le quartier de l’Hôpital Saint Louis, depuis que Lordon y est hospitalisé "sous bonne garde".</p>
             <p class="plusdeP">Sur mon smartphone je regarde le fil de l´actu. Personne n´en parle. Rien de neuf. J´apprends quand même que Joey Starr a fait des blagues douteuses à la Nouvelle Star, et que Finkelkraut a rejoint le parti d´Emmanuel Macron. </p>
+        </div>
+    </div>
+    <div class="day" id="397">
+        <h5><span class="show">397 mars</span> <span class="hide">01 avril 2017</span></h5>
+        <div class="texte">
+            <p>Aujourd´hui c´est l´anniversaire du jour où le traditionnel poisson d´avril s´est transformé en pied de nez de mars. Sur les réseaux sociaux, un appel a été lancé pour un gâteau debout. Plus de 300 volontaires se sont signalés. Les participants n´ayant pu trancher au sujet de la recette, il a été décidé que le gateau debout serait la pièce montée de tous les gateaux qui parviendraient indemnes jusqu´à la Place. Grâce à l´appel  "bougies debout" rassemblant 365 volontaires porteurs d´une bougie chacun, l´événement grand souffle debout poura avoir lieu au son de la chorale debout, entonnant pour la circonstance le désormais célèbre hymne de la place&nbsp;: on n´est pas rentré chez nous. Rassemblement des gateaux prévu ce soir 19h au pied de la statue. Grand souffle à 20h.</p>
         </div>
     </div>
     <div class="day" id="404">
@@ -1105,8 +1168,8 @@
         <h5><span class="show">1000 mars</span> <span class="hide">25 novembre 2018</span></h5>
         <div class="texte">
             <p>MDR. Nous arrivons enfin sur Vénus. L´amour règne sur la Terre. Les médias nous racontent de belles histoires d´amitié. La jungle de Calais a été transformée en jolies maisons écolo grâce aux pots communs qui servent de redistributions sur le prélèvement volontaire des gains acquis par nos stars du tennis et du foot, nos stars de cinémas et nos grandes entreprises qui ont créé le dividende sociale et le dividende salariale en parallèle au dividende des actionnaires. Le monde est plus beau parce que tout simplement du haut en bas de l´échelle des revenus, chacun et chacune est solidaire de l´autre d´une façon ou d´une autre. Les offshores ne sont qu´un très lointain souvenir, les banques veillent à la richesse collective des peuples et n´agissent plus en banksters tout simplement parce que dans les banques aussi Nuit Debout a essaimé sa révolution et que les jeunes pousses qui ont étudié l´économie prennent des places à responsabilité qui responsabilise le monde de la finance à ses devoirs citoyens. Oui. Incroyable! Nous nous sommes téléportés de Mars à Vénus et nous commençons le nouveau calendrier Vénusien destiné à durer aussi longtemps que l´Humanité fera partie du système universel. MDR. Nous allons fêter ce soir les Nuits Debout Place de la République et sur toutes les places de la Terre pour cette réussite colossale dont personne parmi les anciens irresponsables ne donnaient de chance. Notre aventure spAciale a gagné grâce au move de notre Love et à notre Paix intérieure que nous pratiquons tous les jours. Nous avons atteint Vénus par téléportation et ça, personne ne pouvait croire qu´un certain Einstein nous avait donné raison.</p>
-</div>
-</div>
+        </div>
+    </div>
 </div>
 
 <footer class="box">

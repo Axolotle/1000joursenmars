@@ -10,6 +10,13 @@
 
 <body>
 
+<a href="#main" class="toplink">
+    <svg height="30" width="30">
+        <rect width="30" height="30" style="fill:white;stroke:blue;stroke-width:4" />
+        <polyline points="7,21 15,9 23,21" style="fill:none;stroke:blue;stroke-width:2" />
+    </svg>
+</a>
+
 <header class="box">
     <h1 id="title">1000 jours en mars</h1>
 </header>
@@ -24,11 +31,20 @@
             <li>Choisissez une date, entre demain et le 1000 mars 2016 ;</li>
             <li>Écrivez ce qui s'y passe, comment on y vit, ce qui a changé ou est resté le même ;</li>
             <li>Signez de votre nom réel, imaginaire ou inexistant ;</li>
-            <li>Postez le texte sur le pad <a href="https://strasbourg.nuitdebout.fr/pad/p/1000joursenmars" target="_blank">1000joursenmars</a>, envoyez-le par mail à <a href="mailto:1000joursenmars@zanzibar.zone">1000joursenmars@zanzibar.zone</a> ou partagez-le sur la page <a href="https://www.facebook.com/groups/577395245769634/" target="_blank">facebook</a> ;</li>
+            <li>Postez le texte sur le pad <a href="https://strasbourg.nuitdebout.fr/pad/p/1000joursenmars" target="_blank">1000joursenmars</a>, envoyez-le par <a href="mailto:1000joursenmars@zanzibar.zone">mail</a> ou partagez-le sur la page <a href="https://www.facebook.com/groups/577395245769634/" target="_blank">facebook</a> ;</li>
             <li>Vous pouvez lire sur ce site les textes proposés sur le pad. Celui-ci s'actualise une fois par jour.</li>
         </ul>
 
         <p class="top">1000 jours en mars invite à imaginer collectivement les un-peu-moins de trois années qui arrivent. C'est de la science-fiction en prise directe avec le réel. Un endroit où formuler des espoirs, des attentes, des craintes. Où se raconter, puis raconter aux autres, les histoires de ce qui va se passer.</p>
         <p>Si vous êtes aux Nuits Debout qui existent ou prévoyez d'en monter de nouvelles, on va essayer de créer un kit pour des ateliers 1000 jours en mars sur les places occupées, avec papier de bois, crayons et petits cris d'encouragement.</p>
+    </div>
+
+    <div id="menu">
+        <a id="padlink" href="https://strasbourg.nuitdebout.fr/pad/p/1000joursenmars" target="_blank">> Écrire sur le pad</a>
+        <form>
+            <input id="anchorInput" type="text" placeholder="N°"/>
+            <input type="submit" value="> Aller au texte"
+           onclick="goToAnchor(document.getElementById('anchorInput').value)" />
+        </form>
     </div>
 </section>

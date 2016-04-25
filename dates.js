@@ -26,3 +26,7 @@ function changeBG(css) {
     console.log(css);
 }
 */
+
+function goToAnchor(anchor) {
+    window.location.hash = '#' + anchor;
+}

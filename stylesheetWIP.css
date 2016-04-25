@@ -11,7 +11,7 @@ body {
 
 .box {
     margin: 0 auto;
-    max-width: 42em;
+    max-width: 38em;
 }
 
 header {
@@ -22,8 +22,8 @@ header {
 #title {
     text-align: center;
     font-size: 3em;
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
+    padding-top: 1em;
+    padding-bottom: 1em;
     font-family: pixelpathhpregular;
     margin-top: 2em;
     margin-bottom: 0;
@@ -55,14 +55,62 @@ a {
     color: black;
 }
 
+.toplink {
+    position: fixed;
+    bottom: 6px;
+    right: 10px;
+}
+
+
+
+/* INPUT TEXT NUMBER */
+
+#menu {
+    margin-top: 4em;
+}
+
+#padlink {
+    margin: 0;
+    padding: 0.5em 1em;
+    font-family: inconsolatabold;
+    background-color: blue;
+    color: white;
+    float: left;
+    text-decoration: none;
+}
+
+form {
+    float: right;
+}
+input[type=submit] {
+    background-color: blue;
+    border: none;
+    padding: 0.5em 1em;
+    font-family: inconsolatabold;
+    font-size: 1em;
+    color: white;
+    float: right;
+}
+input[type=submit]:hover {
+    background-color: black;
+}
+input[type=text] {
+    border: none;
+    padding: calc(0.5em + 1px) 1em;
+    font-family: inconsolatabold;
+    font-size: 1em;
+    color: black;
+    width: 3em;
+    text-align: center;
+}
+
 
 
 /* CALENDRIER */
 
 #main {
-    width: 100%;
     max-width: 90%;
-    margin: 10em auto;
+    margin: 12em auto;
 
     line-height: 1.2em;
 }

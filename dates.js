@@ -14,7 +14,7 @@ function showMarsDate(a) {
 }
 
 for (var i = 0; i < showing.length; i++) {
-    showing[i].addEventListener("mouseover", showGregDate); 
+    showing[i].addEventListener("mouseover", showGregDate);
     hiding[i].addEventListener("mouseout", showMarsDate);
 }
 
